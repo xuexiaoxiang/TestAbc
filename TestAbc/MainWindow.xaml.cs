@@ -23,6 +23,11 @@ namespace TestAbc
         public MainWindow()
         {
             InitializeComponent();
+
+            IMyTestInterface IMyTest = new MyTestObject();
+
+            int abc = IMyTest.SysMyTest();
+            string myabc = abc.ToString();
         }
     }
 }
